@@ -57,7 +57,7 @@ defmodule SqliteVec.MixProject do
       {:ecto_sql, "~> 3.0", only: :test},
       {:ecto_sqlite3, "~> 0.17", only: :test},
       {:stream_data, "~> 1.0", only: :test},
-      {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.34", runtime: false},
       {:mix_test_watch, "~> 1.0", only: [:dev, :test], runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:doctest_formatter, "~> 0.3.1", only: [:dev, :test], runtime: false}
