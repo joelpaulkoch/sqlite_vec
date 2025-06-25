@@ -66,11 +66,4 @@ defmodule SqliteVec.Downloader do
 
     matches != []
   end
-
-  def post_write_hook(file) do
-    output_dir = file |> Path.dirname() |> Path.join("..") |> Path.expand()
-    current_version = file |> Path.dirname() |> Path.basename()
-
-    :ok
-  end
 end
